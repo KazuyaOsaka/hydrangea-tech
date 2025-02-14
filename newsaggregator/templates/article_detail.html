@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>{{ article.title }}</h1>
+  <p><small class="text-muted">{{ article.publish_date }} | {{ article.category }} | {{ article.country }}</small></p>
+  <div>
+    {{ article.content|safe }}
+  </div>
+  <hr>
+  <a href="/" class="btn btn-secondary">戻る</a>
+{% endblock %}

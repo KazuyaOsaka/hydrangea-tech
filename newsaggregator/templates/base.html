@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hydrangea.tech</title>
+    <!-- Bootstrap CDN（必要に応じて） -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">hydrangea.tech</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="/">ホーム</a></li>
+          <li class="nav-item"><a class="nav-link" href="/ranking/">ランキング</a></li>
+          <li class="nav-item"><a class="nav-link" href="/settings/">設定</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- メインコンテンツ -->
+    <div class="container mt-4">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <!-- フッター -->
+    <footer class="text-center mt-4">
+      <p>&copy; 2025 hydrangea.tech</p>
+    </footer>
+    <!-- BootstrapのJSと依存ライブラリ -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

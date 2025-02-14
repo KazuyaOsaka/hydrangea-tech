@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1 class="mb-4">最新ニュース</h1>
+  <div class="row">
+    {% for article in articles %}
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ article.title }}</h5>
+            <p class="card-text"><small class="text-muted">{{ article.publish_date }}</small></p>
+            <a href="{% url 'article_detail' article.id %}" class="btn btn-primary">続きを読む</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
